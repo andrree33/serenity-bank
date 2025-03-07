@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <script type="text/javascript" src="../api.js"></script>
+        <title>Serenity Bank</title>
+    </head>
+    <body class="bg-gray-full">
+        <div id="account-summary-container" class="width-full height-full flex-row flex-center fade-in-fast">
+            <div id="account-summary-component" class="flex-column flex-center">
+                <img class="margin-vertical-medium"
+                src="../assets/images/serenity-bank_logo.png"
+                height="175">
+                <div class="grid grid-row-gap-small grid-col-gap-xlarge margin-vertical-medium">
+                    <div class="block">
+                        <div class="text-heading-xxlarge text-serenity-full margin-horizontal-small padding-none"><b>Name</b></div>
+                        <div id="full-name-display"
+                             class="text-heading-xlarge text-serenity-full margin-horizontal-small padding-none"></div>
+                    </div>
+                    <div class="block">
+                        <div class="text-heading-xxlarge text-serenity-full margin-horizontal-small padding-none"><b>Account</b></div>
+                        <div id="account-number-display"
+                             class="text-heading-xlarge text-serenity-full margin-horizontal-small padding-none"></div>
+                    </div>
+                    <div class="block">
+                        <div class="text-heading-xxlarge text-serenity-full margin-horizontal-small padding-none"><b>Today</b></div>
+                        <div id="today-date-display"
+                             class="text-heading-xlarge text-serenity-full margin-horizontal-small padding-none"></div>
+                    </div>
+                    <div class="block">
+                        <div class="text-heading-xxlarge text-serenity-full margin-horizontal-small padding-none"><b>Balance</b></div>
+                        <div id="account-balance-display"
+                             class="text-heading-xlarge text-serenity-full margin-horizontal-small padding-none"></div>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="height-medium width-large overflow-scroll">
+                    <table id="transaction-history"
+                    class="margin-vertical-medium">
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </table>
+                </div>
+                <a href="../index.html" onclick="logoutUser()">
+                    <p id="logout-link-text" class="text-link-small text-serenity-full margin-vertical-large">Logout</p>
+                </a>
+            </div>
+        </div>
+        <script>
+        window.onload = function() {
+            populateAccountSummary();
+        }
+        </script>
+    </body>
+</html>

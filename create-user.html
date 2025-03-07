@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <script type="text/javascript" src="../api.js"></script>
+        <title>Serenity Bank</title>
+    </head>
+    <body class="bg-gray-full">
+        <div id=new-user-container class="width-full height-full flex-row flex-center fade-in-fast">
+            <div id=new-user-component class="flex-column flex-center">
+                <img class="margin-vertical-medium"
+                src="../assets/images/serenity-bank_logo.png"
+                height="175">
+                <fieldset class="width-content height-content flex-column flex-center border border-medium rounded-medium border-serenity-full">
+                    <h1 class="text-serenity-full text-heading-xxlarge margin-vertical-small">Create Account</h1>
+                    <input id="username-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="text"
+                           placeholder="Username">
+                    <input id="full-name-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="text"
+                           placeholder="Full Name">
+                    <input id="initial-deposit-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="text"
+                           placeholder="Initial Deposit Amount">
+                    <input id="password-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="password"
+                           placeholder="Password">
+                    <input id="confirm-password-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="password"
+                           placeholder="Confirm Password">
+                    <button id="create-user-button"
+                            class="bg-serenity-full text-white-full width-8 margin-vertical-small padding-all-medium rounded-small border-none"
+                            onclick="createUser()"><b>Create</b></button>
+                </fieldset>
+                <a href="../index.html">
+                    <p id="register-link-text" class="text-link-small text-serenity-full margin-vertical-medium">Return to login screen</p>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
