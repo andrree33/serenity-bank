@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script type="text/javascript" src="./api.js"></script>
+        <title>Serenity Bank</title>
+    </head>
+    <body class="bg-gray-full">
+        <div id=login-container class="width-full height-full flex-row flex-center fade-in-slow">
+            <div id=login-component class="flex-column flex-center">
+                <img class="margin-vertical-medium"
+                src="assets/images/serenity-bank_logo.png"
+                height="175">
+                <fieldset class="width-content height-content flex-column flex-center border border-medium rounded-medium border-serenity-full">
+                    <h1 class="text-serenity-full text-heading-xxlarge margin-vertical-small">Serenity Bank</h1>
+                    <input id="username-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="text"
+                           placeholder="Username">
+                    <input id="password-field"
+                           class="width-medium margin-vertical-small padding-all-small rounded-small border border-large"
+                           type="password"
+                           placeholder="Password">
+                    <button id="login-button"
+                            class="bg-serenity-full text-white-full width-8 margin-vertical-small padding-all-medium rounded-small border-none"
+                            onclick="loginUser()"><b>Login</b></button>
+                </fieldset>
+                <a href="components/create-user.html">
+                    <p id="register-link-text" class="text-link-small text-serenity-full margin-vertical-medium">Register a new account</p>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
